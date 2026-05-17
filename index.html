@@ -527,7 +527,7 @@
 
     <script>
         (function() {
-            const ORIGIN_API = 'https://wzapi.com/api/jhsj?cloud_types=quark&kw=';
+            const ORIGIN_API = 'https://wzapi.com/api/jhsj?kw=';
             const PROXY_API = 'https://proxy.api.030101.xyz/';
             const USE_PROXY = true;
 
@@ -728,7 +728,7 @@
 
             function renderEmptyOrError(state, kw) {
                 if (state === 'empty') {
-                    resultsContainer.innerHTML = `<div class="empty-state">😞 未找到关于 “${escapeHtml(kw)}” 的资源<br>试试其他关键词 (例如: 蜜语纪、短剧、死神来了)</div>`;
+                    resultsContainer.innerHTML = `<div class="empty-state">😞 未找到关于 “${escapeHtml(kw)}” 的资源<br>试试其他关键词 (例如: 低智商犯罪、短剧、斗破苍穹)</div>`;
                     statsArea.innerText = `🔍 没有找到与 “${kw}” 相关的结果`;
                 }
                 document.getElementById('filterBar').style.display = 'none';
